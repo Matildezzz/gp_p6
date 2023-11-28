@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-size: 10px;
+            background-color: #C455D3;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        #container{
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            background-color: #C455D3;
+        }
+       
+        #cont_img1 , #cont_img2{
+            width: 50vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        #cont_img1{
+            color: white;
+            text-transform: uppercase;
+            font-family: 'Inter', sans-serif;
+            background-color: #C455D3;
+            padding: 2em;
+        }
+        #cont_img2 {
+            width: 50vw;
+            height: 100vh;
+        }
+        #cont_img2 img{
+            width: 100vh;
+            height: 100%;
+            object-fit: cover;
+            -o-object-fit: cover;
+            transform: rotate(90deg);
+            overflow: hidden;
+        }
+        #h_1 , #h_2{
+            display: flex;
+            height: 25vh;
+        }
+        #h_3{
+            display: flex;
+        }
+        h1,h2,h3,h4,h5{
+            font-size: 3.8em;
+        }
+        h2,h3,h4,h5{
+            width: 50%;
+        }
+ 
+        @media screen and (max-width:1024px) {
+            #container{
+                flex-direction: column;
+                background-color: #C455D3;
+            }
+            #cont_img1 , #cont_img2{
+                width: 100%;
+                height: 50vh;
+            }
+            #cont_img2 img{
+                width: 100%;
+                height: 50vh;
+                transform: rotate(0deg);
+            }
+            #h_1{
+                height: 15vh;
+            }
+            #h_2{
+                height: 8vh;
+            }
+            h1,h2,h3,h4,h5{
+            font-size: 2em;
+            }
+        }
+        @media screen and (max-width:428px) {
+            #container{
+                background-color: #C455D3;
+            }
+            #h_1{
+                height: 13vh;
+            }
+            #h_2{
+                height: 8vh;
+            }
+            h1,h2,h3,h4,h5{
+            font-size: 1.5em;
+            }
+        } 
+    </style>
+
+<body>
+    <div id="container">
+        <div id="cont_img1">
+           <div id="h_1">
+                <h1>flexible systems</h1>
+           </div>
+           <div id="h_2">
+                <h2>mat</h2>
+                <h3>mcg</h3>
+           </div>
+           <div id="h_3">
+                <h4>jj clm</h4>
+                <h5>www.</br>flexible</br>visual</br>systems</br>.info</h5>
+           </div>
+        </div>
+        <div id="cont_img2">
+            <img src="img/Frame.svg">
+        </div>
+    </div>
+</body>
+</html>
